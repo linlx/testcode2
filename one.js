@@ -9,7 +9,7 @@ const regtest = bitcoin.networks.testnet
 const bip65 = require('bip65')
 
 //輸入私鑰，教學用，請勿隨意公開私鑰
-var privateKey = "cRSyiwECUrJmT4URnUfLn3YU6sPRPBCGKvmhFwqEiQGqJwUAD5jL";
+var privateKey = "cRMkTpUQ26tvK8i4Zm3CtwBf9CUCt6yb9pEmCfuuPmYmzFVHbhKV";
 
 //產生公鑰跟私鑰
 const keyPair = bitcoin.ECPair.fromWIF(privateKey,regtest);
@@ -21,11 +21,11 @@ const txb = new bitcoin.TransactionBuilder(regtest);
 
 
 //用listunspent 取出最後一筆資料的txid
-txb.addInput('a99f5e88b98a417a5672754d2d3d4eee33f71909a5c9327c774a85f98a5d25ba', 0);
+txb.addInput('9b559241eea65ba67412ee9107af1c3d51e3b67c2eb80a55e90da133235929a9', 0);
 
 //用getnewaddress取得新的位址
-txb.addOutput('2NAfWtRBi6d6RAg5N57vMS1oVPm7na7BiDF', 25);
-txb.addOutput('2NBafDCr2m7At4gcme79jGJXRaXzvQmPkop', 1);
+txb.addOutput('2N95qoj9sYyKHSdd13MrCKpM62hNxJfMSrR', 25);
+txb.addOutput('2MzK9d1UBMpPgstLYsPb8xpfvZambL9Nczy', 0.00989);
 
 //交易簽名
 txb.sign(0, keyPair); //第一個位置的是上一筆交易中的第一個支出，第二個欄位是我們的公鑰與私鑰
