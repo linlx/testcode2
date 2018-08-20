@@ -25,7 +25,6 @@ txb.addInput('40dcb5047a56bb3d79c57b3073965b31dcf7078cc3f1545dbb99c06620c5f3db',
 
 //用getnewaddress取得新的位址
 txb.addOutput('2NAfWtRBi6d6RAg5N57vMS1oVPm7na7BiDF', 25);
-txb.addOutput('mwyri9wEV8keCByTjt4hBPpd71Sa7PHfJS"', 13.99);
 
 //交易簽名
 txb.sign(0, keyPair); //第一個位置的是上一筆交易中的第一個支出，第二個欄位是我們的公鑰與私鑰
