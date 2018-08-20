@@ -1,0 +1,19 @@
+income dust army art bounce plunge humble brave sort drastic spice pave
+
+bitcoind -regtest -daemon
+bitcoin-cli -regtest getnewaddress alice > 2MxfNS8sB1GcCo3GBLmX2PUw277H9zvrn2L
+bitcoin-cli -regtest getnewaddress bob > 2N6WFhMUsXtSHr6ZxEV7PoNgjxxo3cxbYtp
+bitcoin-cli -regtest validateaddress 2MxfNS8sB1GcCo3GBLmX2PUw277H9zvrn2L
+bitcoin-cli -regtest generate 1
+bitcoin-cli -regtest sendtoaddress 2MzeVqmSxhEB3HpzacAb8bWzEYmziVJcLVu 25.00001
+bitcoin-cli -regtest listunspent 0 1
+bitcoin-cli -regtest dumpprivkey 2MzK9d1UBMpPgstLYsPb8xpfvZambL9Nczy
+bitcoin-cli -regtest listaddressgroupings
+bitcoin-cli -regtest getbalance 2MzK9d1UBMpPgstLYsPb8xpfvZambL9Nczy
+bitcoin-cli -regtest gettransaction 0b27e8d7709f03ef75c542bac01e844a3279545bdcaaabad75e1c854a736bb15
+bitcoin-cli -regtest decoderawtransaction 02000000011d85ce4705b8e0e5a0b41cf01c032d4dd8660848d89025b44de350a795b179d5010000006b483045022100d2cf20d0ee41d74cf84cf1f8b315318d016be0a0e82a92feb96b4e6cebe72e2a0220652016f36787de9394a6452b841d059bc80c48e3dcc76372d3ae18f136221e42012103f718a9445e1f5e0705d4d07a5ba3133c442a4bf3ff9c475ffd7819cc415f6ae2ffffffff01190000000000000017a914adbbc0954b29242b9a29f9553fe7f02cd950b25a8700000000
+
+address: 
+prikey: 
+txid: 
+new_address: 
