@@ -9,7 +9,7 @@ const regtest = bitcoin.networks.testnet
 const bip65 = require('bip65')
 
 //輸入私鑰，教學用，請勿隨意公開私鑰
-var privateKey = "cRMkTpUQ26tvK8i4Zm3CtwBf9CUCt6yb9pEmCfuuPmYmzFVHbhKV";
+var privateKey = "cVGycYyCwFBF7qqkREzMnQnyNnEgTidSnVGKQMYb2YBbgAQZLWCj";
 
 //產生公鑰跟私鑰
 const keyPair = bitcoin.ECPair.fromWIF(privateKey,regtest);
@@ -21,7 +21,7 @@ const txb = new bitcoin.TransactionBuilder(regtest);
 
 
 //用listunspent 取出最後一筆資料的txid
-txb.addInput('9b559241eea65ba67412ee9107af1c3d51e3b67c2eb80a55e90da133235929a9', 0);
+txb.addInput('d579b195a750e34db42590d8480866d84d2d031cf01cb4a0e5e0b80547ce851d', 0);
 
 //用getnewaddress取得新的位址
 txb.addOutput('2N95qoj9sYyKHSdd13MrCKpM62hNxJfMSrR', 25);
